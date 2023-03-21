@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+:root {
+	font-family: 'Mulish', sans-serif;
+
+	--text-color: black;
+	--bg-color: #d0dbdb;
+	--header-color: #f0fcfc;
+	--a-hover-color: #f58cea;
+
+	color: var(--text-color);
+	background-color: var(--bg-color);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--header-color);
+}
+
+header a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+header h1 {
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+header ul {
+	list-style-type: none;
+	display: flex;
+}
+
+header li {
+	padding: 1rem;
+	cursor: pointer;
+}
+
+header :is(li:hover a, .heading:hover) {
+	color: #f58cea;
+}
