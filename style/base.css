@@ -56,10 +56,38 @@ header :is(li:hover a, .heading:hover) {
 .content {
 	padding: 1rem;
 
+	display: grid;
+
+	gap: 1rem 2rem;
+
 	grid-template-areas: 
 		"heading heading"
 		"description img";
+	
+	place-content: center;
 
-	grid-template-columns: 1fr auto;
+
+	grid-template-columns: 70ch auto;
 	grid-template-rows: auto 1fr;
+}
+
+.content :is(h1, h2) {
+	grid-area: heading;
+}
+
+.content p {
+	grid-area: description;
+}
+
+.content img {
+	grid-area: img;
+	width: 100%;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.25rem;
 }
