@@ -29,6 +29,10 @@ header a {
 	text-decoration: none;
 }
 
+:is(header a, .heading) {
+	transition: color 150ms ease-in-out;
+}
+
 header h1 {
 	padding: 1rem;
 	font-size: 1.5rem;
@@ -47,4 +51,15 @@ header li {
 
 header :is(li:hover a, .heading:hover) {
 	color: #f58cea;
+}
+
+.content {
+	padding: 1rem;
+
+	grid-template-areas: 
+		"heading heading"
+		"description img";
+
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto 1fr;
 }
