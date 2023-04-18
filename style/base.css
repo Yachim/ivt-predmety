@@ -7,6 +7,7 @@
 	--bg-color: #d0dbdb;
 	--header-color: #f0fcfc;
 	--a-hover-color: #f58cea;
+	--a-active-color: lime;
 
 	color: var(--text-color);
 	background-color: var(--bg-color);
@@ -49,8 +50,12 @@ header li {
 	cursor: pointer;
 }
 
-header :is(li:hover a, .heading:hover) {
+header :is(li:hover a:not(.active), .heading:hover) {
 	color: #f58cea;
+}
+
+header nav a.active {
+	color: var(--a-active-color);
 }
 
 .content {
