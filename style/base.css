@@ -46,8 +46,11 @@ header ul {
 }
 
 header li {
-	padding: 1rem;
 	cursor: pointer;
+}
+
+header li a {
+	padding: 1rem;
 }
 
 header :is(li:hover a:not(.active), .heading:hover) {
