@@ -3,12 +3,12 @@
 :root {
 	font-family: 'Mulish', sans-serif;
 
-	--text-color: black;
+	--text-color: #161717;
 	--bg-color: #d0dbdb;
 	--header-color: #f0fcfc;
 	--footer-color: #f0fcfc;
-	--a-hover-color: #f58cea;
-	--a-active-color: lime;
+	--a-hover-color: #449dab;
+	--a-active-color: #2890a1;
 
 	color: var(--text-color);
 	background-color: var(--bg-color);
@@ -65,7 +65,7 @@ header li a {
 }
 
 header :is(li:hover a:not(.active), .heading:hover) {
-	color: #f58cea;
+	color: var(--a-hover-color);
 }
 
 header nav a.active {
